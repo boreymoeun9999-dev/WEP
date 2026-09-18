@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile | Internship & Career Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div class="container navbar">
+          <a href="index.html" class="brand">
+            <span class="logo-mark">IC</span>
+            <span>Internship & Career Guide</span>
+          </a>
+          <nav class="nav-menu" aria-label="Main navigation">
+            <a href="index.html" class="nav-item">Home</a>
+            <a href="internships.html" class="nav-item">Internships</a>
+            <a href="career-guide.html" class="nav-item">Career Guide</a>
+            <a href="resources.html" class="nav-item">Resources</a>
+            <a href="profile.html" class="nav-item active">My Profile</a>
+          </nav>
+          <div class="nav-actions">
+            <button class="icon-btn" aria-label="Search">⌕</button>
+            <button class="icon-btn" aria-label="Notifications">🔔</button>
+            <div class="profile-pill">
+              <div class="avatar">BS</div>
+              <div class="user-meta">
+                <span>Borey</span>
+                <span>▾</span>
+              </div>
+            </div>
+            <a href="login.html" class="btn btn-secondary">Login</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="page-hero">
+          <div class="container">
+            <div class="profile-header">
+              <div class="profile-identity">
+                <div class="profile-avatar-lg">BS</div>
+                <div>
+                  <h1 style="margin-bottom: 6px;">Borey Samath</h1>
+                  <p>University of Cambodia</p>
+                  <p>Computer Science</p>
+                </div>
+              </div>
+              <button class="btn btn-secondary">Edit Profile</button>
+            </div>
+
+            <div class="profile-card" style="margin-top: 10px;">
+              <h3>About Me</h3>
+              <p style="color: var(--muted); line-height: 1.8;">
+                I am a motivated and curious Computer Science student who is passionate about web development,
+                design, and building practical digital solutions. I enjoy learning new skills, growing through internships,
+                and developing my career path with real-world experience.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 12px;">
+          <div class="container dashboard-grid">
+            <aside class="profile-card">
+              <h3>Personal Information</h3>
+              <div class="info-list">
+                <div class="info-row"><span>Full Name</span><strong>Borey Samath</strong></div>
+                <div class="info-row"><span>Email</span><strong>borey.samath@gmail.com</strong></div>
+                <div class="info-row"><span>Phone</span><strong>+855 12 345 678</strong></div>
+                <div class="info-row"><span>Location</span><strong>Phnom Penh, Cambodia</strong></div>
+                <div class="info-row"><span>Education</span><strong>Bachelor of Computer Science</strong></div>
+              </div>
+            </aside>
+
+            <div class="profile-card">
+              <h3>Skills</h3>
+              <div class="skills-wrap">
+                <span class="skill-pill">HTML <button type="button" class="remove-skill">×</button></span>
+                <span class="skill-pill">CSS <button type="button" class="remove-skill">×</button></span>
+                <span class="skill-pill">JavaScript <button type="button" class="remove-skill">×</button></span>
+                <span class="skill-pill">Python <button type="button" class="remove-skill">×</button></span>
+                <span class="skill-pill">UI/UX <button type="button" class="remove-skill">×</button></span>
+                <span class="skill-pill">Communication <button type="button" class="remove-skill">×</button></span>
+              </div>
+              <div style="margin-top: 18px;">
+                <button class="btn btn-primary add-skill-btn">Add Skill</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 4px;">
+          <div class="container dashboard-grid">
+            <div class="profile-card">
+              <h3>CV Section</h3>
+              <div class="file-box">
+                <div>
+                  <strong>Current CV</strong><br />
+                  <span class="small-text">borey-samath-cv.pdf</span>
+                </div>
+                <div class="card-actions-btns">
+                  <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">Upload CV</button>
+                  <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">Replace CV</button>
+                  <button class="btn btn-primary" style="padding: 0.75rem 1rem;">Download CV</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="profile-card">
+              <h3>Application Status</h3>
+              <div class="progress-steps">
+                <div class="step success">Applied</div>
+                <div class="step active">Reviewing</div>
+                <div class="step pending">Interview</div>
+                <div class="step">Accepted</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 4px;">
+          <div class="container">
+            <div class="dashboard-grid">
+              <div class="profile-card">
+                <h3>Saved Internships</h3>
+                <div class="internship-card" style="margin-top: 16px; box-shadow: none;">
+                  <h3>Frontend Developer Intern</h3>
+                  <p>Google</p>
+                  <div class="meta-list">
+                    <span class="meta-item">📍 HCMC</span>
+                    <span class="meta-item">📅 12 Jun 2026</span>
+                  </div>
+                  <div class="card-actions-btns">
+                    <button class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Details</button>
+                    <button class="btn btn-primary" style="padding: 0.7rem 1rem;">Apply</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="profile-card">
+                <h3>Applied Internships</h3>
+                <div class="table-wrap">
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th>Internship</th>
+                        <th>Company</th>
+                        <th>Applied Date</th>
+                        <th>Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Frontend Developer</td>
+                        <td>Google</td>
+                        <td>10 Jun 2026</td>
+                        <td><span class="status-badge reviewing">Reviewing</span></td>
+                      </tr>
+                      <tr>
+                        <td>UX Design Intern</td>
+                        <td>Microsoft</td>
+                        <td>12 Jun 2026</td>
+                        <td><span class="status-badge interview">Interview</span></td>
+                      </tr>
+                      <tr>
+                        <td>Data Analyst Intern</td>
+                        <td>Shopify</td>
+                        <td>17 Jun 2026</td>
+                        <td><span class="status-badge accepted">Accepted</span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" style="padding-top: 4px;">
+          <div class="container">
+            <div class="profile-card">
+              <h3>Account Settings</h3>
+              <div class="card-actions-btns" style="margin-top: 16px; flex-wrap: wrap;">
+                <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">Edit Profile</button>
+                <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">Change Password</button>
+                <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">Notification Settings</button>
+                <button class="btn btn-danger" style="padding: 0.75rem 1rem;">Logout</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <div class="brand" style="color: white;">
+            <span class="logo-mark">IC</span>
+            <span>Internship & Career Guide</span>
+          </div>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="internships.html">Internships</a>
+            <a href="career-guide.html">Career Guide</a>
+            <a href="resources.html">Resources</a>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

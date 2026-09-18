@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Internship & Career Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="auth-page">
+      <div class="auth-box">
+        <div class="brand" style="justify-content: center; margin-bottom: 20px;">
+          <span class="logo-mark">IC</span>
+          <span>Internship & Career Guide</span>
+        </div>
+
+        <h2 class="auth-title" style="text-align: center;">Welcome back</h2>
+        <p style="text-align: center; margin-bottom: 24px;">Sign in to continue your career journey</p>
+
+        <form action="profile.html" method="get">
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+          </div>
+
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input id="password" class="form-control" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required />
+          </div>
+
+          <div class="form-row">
+            <label class="checkbox">
+              <input type="checkbox" />
+              <span>Remember Me</span>
+            </label>
+            <a href="#" style="color: var(--tertiary); font-weight: 600;">Forgot Password?</a>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+        </form>
+
+        <p style="text-align: center; margin-top: 20px; color: var(--muted);">
+          Don’t have an account? <a href="register.html" style="color: var(--primary); font-weight: 600;">Create Account</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
