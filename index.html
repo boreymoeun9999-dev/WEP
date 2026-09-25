@@ -1,107 +1,108 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Internship & Career Guide</title>
+    <title>Internship & Career Guide</title><script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
   </head>
-  <body>
-    <div class="app-shell">
-      <header class="topbar">
-        <div class="container navbar">
-          <a href="index.html" class="brand">
-            <span class="logo-mark">IC</span>
-            <span>Internship & Career Guide</span>
+  <body class="bg-slate-50 font-[Poppins] text-slate-900 leading-relaxed">
+    <div class="min-h-screen flex flex-col">
+      <header class="sticky top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-200">
+        <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto flex items-center justify-between min-h-[76px] gap-6">
+          <a href="index.html" class="inline-flex items-center gap-3 font-bold">
+            <span class="grid h-[42px] w-[42px] place-items-center rounded-full bg-gradient-to-br from-blue-600 to-green-600 text-xl text-white"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+            <span class="leading-tight">Career Guide <small class="block text-[9px] font-medium tracking-wide text-slate-500">YOUR FUTURE · OUR GUIDE</small></span>
           </a>
 
-          <nav class="nav-menu" aria-label="Main navigation">
-            <a href="index.html" class="nav-item active">Home</a>
-            <a href="internships.html" class="nav-item">Internships</a>
-            <a href="career-guide.html" class="nav-item">Career Guide</a>
-            <a href="resources.html" class="nav-item">Resources</a>
-            <a href="profile.html" class="nav-item">My Profile</a>
+          <nav class="hidden items-center justify-center gap-2 flex-1 md:flex" aria-label="Main navigation">
+            <a href="index.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600 bg-green-50 text-green-600 font-semibold">Home</a>
+            <a href="internships.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Internships</a>
+            <a href="career-guide.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Career Guide</a>
+            <a href="resources.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Resources</a>
+            <a href="profile.html" class="px-4 py-2.5 rounded-xl text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">My Profile</a>
           </nav>
 
-          <div class="nav-actions">
-            <button class="icon-btn" aria-label="Search">⌕</button>
-            <button class="icon-btn" aria-label="Notifications">🔔</button>
-            <div class="profile-pill">
-              <div class="avatar">BS</div>
-              <div class="user-meta">
+          <div class="flex items-center gap-3">
+            <button class="grid place-items-center w-[42px] h-[42px] rounded-xl border border-slate-200 bg-white" aria-label="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+            <button class="grid place-items-center w-[42px] h-[42px] rounded-xl border border-slate-200 bg-white" aria-label="Notifications"><i class="fa-solid fa-bell" aria-hidden="true"></i></button>
+            <div class="flex items-center gap-2.5 rounded-xl border border-slate-200 bg-slate-100 px-3 py-2">
+              <div class="grid place-items-center w-[38px] h-[38px] rounded-full bg-gradient-to-br from-blue-100 to-green-100 text-teal-700 font-bold">BS</div>
+              <div class="flex items-center gap-2">
                 <span>Borey</span>
-                <span>▾</span>
+                <span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></span>
               </div>
             </div>
-            <a href="login.html" class="btn btn-secondary">Login</a>
-            <button class="mobile-menu-toggle" aria-label="Toggle menu">☰</button>
+            <a href="login.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700">Login</a>
+            <button class="hidden items-center justify-center w-[42px] h-[42px] rounded-xl border border-slate-200 bg-white md:hidden" aria-label="Toggle menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
           </div>
         </div>
       </header>
 
       <main>
-        <section class="hero">
-          <div class="container hero-grid">
-            <div class="hero-copy">
-              <span class="eyebrow">Career growth starts here</span>
-              <h1>Find Your Internship. Build Your Future.</h1>
-              <p>
+        <section class="py-12">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto grid grid-cols-[1.2fr_.8fr] gap-8 items-center max-[980px]:grid-cols-2 max-[680px]:grid-cols-1">
+            <div class="py-3">
+              <span class="inline-flex rounded-full bg-green-600/10 px-3 py-2 text-xs font-semibold text-green-600">Career growth starts here</span>
+              <h1 class="text-4xl font-bold leading-tight mb-3">Find Your Internship. Build Your Future.</h1>
+              <p class="text-slate-600">
                 Discover internship opportunities, explore career paths, and develop the skills
                 you need for your future career.
               </p>
 
-              <div class="hero-actions">
-                <a href="internships.html" class="btn btn-primary">Find Internships</a>
-                <a href="career-guide.html" class="btn btn-secondary">Explore Career Guide</a>
+              <div class="flex items-center gap-4 flex-wrap mb-7">
+                <a href="internships.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20">Find Internships</a>
+                <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700">Explore Career Guide</a>
               </div>
 
-              <div class="hero-metrics">
-                <div class="metric">
+              <div class="flex gap-7 flex-wrap">
+                <div class="flex flex-col gap-1">
                   <strong>1.2k+</strong>
                   <span>internships</span>
                 </div>
-                <div class="metric">
+                <div class="flex flex-col gap-1">
                   <strong>150+</strong>
                   <span>companies</span>
                 </div>
-                <div class="metric">
+                <div class="flex flex-col gap-1">
                   <strong>85%</strong>
                   <span>students placed</span>
                 </div>
               </div>
             </div>
 
-            <div class="hero-visual">
-              <div class="visual-card">
-                <div class="student-panel">
-                  <div class="student-header">
-                    <div class="student-card">
-                      <div class="student-avatar">BJ</div>
+            <div class="relative min-h-[440px] flex items-center justify-center">
+              <div class="w-full max-w-[500px] rounded-[32px] border bg-green-600/5 p-7 shadow-lg">
+                <div class="rounded-[22px] border border-slate-200 bg-white p-5">
+                  <div class="flex items-center justify-between mb-5">
+                    <div class="flex items-center gap-3.5">
+                      <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-gradient-to-br from-green-300 to-blue-200 font-bold">BJ</div>
                       <div>
                         <strong>Bora</strong><br />
-                        <span class="small-text" style="color: var(--muted);">Computer Science</span>
+                        <span class="text-sm text-slate-600">Computer Science</span>
                       </div>
                     </div>
-                    <span class="badge success">Available</span>
+                    <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-green-700/10 text-green-700">Available</span>
                   </div>
 
-                  <div class="stat-grid">
-                    <div class="stat-box">
+                  <div class="grid grid-cols-2 gap-3.5 mt-5">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-100 p-4">
                       <strong>12</strong>
                       <span>Applications</span>
                     </div>
-                    <div class="stat-box">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-100 p-4">
                       <strong>4</strong>
                       <span>Interviews</span>
                     </div>
-                    <div class="stat-box">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-100 p-4">
                       <strong>7</strong>
                       <span>Skills</span>
                     </div>
-                    <div class="stat-box">
+                    <div class="rounded-2xl border border-slate-200 bg-slate-100 p-4">
                       <strong>92%</strong>
                       <span>Profile match</span>
                     </div>
@@ -112,120 +113,120 @@
           </div>
         </section>
 
-        <section class="section" style="padding-top: 18px;">
-          <div class="container">
-            <div class="search-section">
-              <div class="search-bar">
-                <div class="input-group">
+        <section class="py-[72px] pt-[18px]">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto">
+            <div class="rounded-3xl border border-slate-200 bg-white p-5 shadow-lg">
+              <div class="grid grid-cols-[1.5fr_.8fr_auto] gap-3.5 items-center max-[680px]:grid-cols-1">
+                <div class="relative">
                   <input type="text" placeholder="Search internships, skills, or companies" />
                 </div>
-                <div class="input-group">
+                <div class="relative">
                   <input type="text" placeholder="Location" />
                 </div>
-                <button class="btn btn-primary">Search</button>
+                <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20">Search</button>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <div class="page-heading">
+        <section class="py-[72px]">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto">
+            <div class="mb-7">
+              <div class="flex items-end justify-between gap-4 mb-7">
                 <div>
-                  <h2>Featured Internships</h2>
+                  <h2 class="text-3xl font-bold leading-tight mb-3">Featured Internships</h2>
                 </div>
-                <a href="internships.html" class="btn btn-outline">View all</a>
+                <a href="internships.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-green-600/20 text-green-600">View all</a>
               </div>
             </div>
 
-            <div class="card-grid">
-              <article class="internship-card">
-                <div class="card-header">
-                  <div class="company-mark">G</div>
-                  <button class="save-btn" aria-label="Save">♡</button>
+            <div class="grid grid-cols-3 gap-6 max-[980px]:grid-cols-2 max-[680px]:grid-cols-1">
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                  <div class="grid place-items-center w-[52px] h-[52px] rounded-2xl bg-blue-500/10 font-bold text-blue-600">G</div>
+                  <button class="w-[38px] h-[38px] rounded-[10px] border border-slate-200 bg-slate-400/10" aria-label="Save"><i class="fa-regular fa-heart" aria-hidden="true"></i></button>
                 </div>
 
-                <h3>Frontend Developer Intern</h3>
-                <p>Google</p>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Frontend Developer Intern</h3>
+                <p class="text-slate-600">Google</p>
 
-                <div class="meta-list">
-                  <span class="meta-item">📍 Ho Chi Minh City</span>
-                  <span class="meta-item">💼 Hybrid</span>
-                  <span class="meta-item">📅 3 months</span>
+                <div class="flex flex-wrap gap-x-3 gap-y-2 my-3.5 text-sm text-slate-600">
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Ho Chi Minh City</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Hybrid</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 3 months</span>
                 </div>
 
-                <div class="skill-tags">
-                  <span class="skill-tag">HTML</span>
-                  <span class="skill-tag">CSS</span>
-                  <span class="skill-tag">React</span>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">HTML</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">CSS</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">React</span>
                 </div>
 
-                <div class="card-footer">
-                  <span class="deadline-text">Deadline: 25 Jun</span>
-                  <div class="card-actions-btns">
-                    <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">View Details</button>
-                    <button class="btn btn-primary" style="padding: 0.75rem 1rem;">Apply</button>
+                <div class="flex items-center justify-between gap-3 mt-4">
+                  <span class="text-xs font-semibold text-orange-600">Deadline: 25 Jun</span>
+                  <div class="flex flex-wrap gap-2.5">
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-3">View Details</button>
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20 px-4 py-3">Apply</button>
                   </div>
                 </div>
               </article>
 
-              <article class="internship-card">
-                <div class="card-header">
-                  <div class="company-mark" style="background: rgba(46,125,50,.12); color: var(--success);">M</div>
-                  <button class="save-btn" aria-label="Save">♡</button>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                  <div class="grid place-items-center w-[52px] h-[52px] rounded-2xl bg-blue-500/10 font-bold text-blue-600 bg-green-700/10 text-green-700">M</div>
+                  <button class="w-[38px] h-[38px] rounded-[10px] border border-slate-200 bg-slate-400/10" aria-label="Save"><i class="fa-regular fa-heart" aria-hidden="true"></i></button>
                 </div>
 
-                <h3>UX Design Intern</h3>
-                <p>Microsoft</p>
+                <h3 class="text-xl font-semibold leading-tight mb-3">UX Design Intern</h3>
+                <p class="text-slate-600">Microsoft</p>
 
-                <div class="meta-list">
-                  <span class="meta-item">📍 Remote</span>
-                  <span class="meta-item">💼 Full-time</span>
-                  <span class="meta-item">📅 6 weeks</span>
+                <div class="flex flex-wrap gap-x-3 gap-y-2 my-3.5 text-sm text-slate-600">
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Remote</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Full-time</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 6 weeks</span>
                 </div>
 
-                <div class="skill-tags">
-                  <span class="skill-tag">Figma</span>
-                  <span class="skill-tag">Research</span>
-                  <span class="skill-tag">UI</span>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">Figma</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">Research</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">UI</span>
                 </div>
 
-                <div class="card-footer">
-                  <span class="deadline-text">Deadline: 30 Jun</span>
-                  <div class="card-actions-btns">
-                    <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">View Details</button>
-                    <button class="btn btn-primary" style="padding: 0.75rem 1rem;">Apply</button>
+                <div class="flex items-center justify-between gap-3 mt-4">
+                  <span class="text-xs font-semibold text-orange-600">Deadline: 30 Jun</span>
+                  <div class="flex flex-wrap gap-2.5">
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-3">View Details</button>
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20 px-4 py-3">Apply</button>
                   </div>
                 </div>
               </article>
 
-              <article class="internship-card">
-                <div class="card-header">
-                  <div class="company-mark" style="background: rgba(21,101,192,.12); color: var(--tertiary);">S</div>
-                  <button class="save-btn" aria-label="Save">♡</button>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="flex items-center justify-between mb-4">
+                  <div class="grid place-items-center w-[52px] h-[52px] rounded-2xl bg-blue-500/10 font-bold text-blue-600 bg-blue-700/10 text-blue-600">S</div>
+                  <button class="w-[38px] h-[38px] rounded-[10px] border border-slate-200 bg-slate-400/10" aria-label="Save"><i class="fa-regular fa-heart" aria-hidden="true"></i></button>
                 </div>
 
-                <h3>Data Analyst Intern</h3>
-                <p>Shopify</p>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Data Analyst Intern</h3>
+                <p class="text-slate-600">Shopify</p>
 
-                <div class="meta-list">
-                  <span class="meta-item">📍 Phnom Penh</span>
-                  <span class="meta-item">💼 On-site</span>
-                  <span class="meta-item">📅 4 months</span>
+                <div class="flex flex-wrap gap-x-3 gap-y-2 my-3.5 text-sm text-slate-600">
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-location-dot" aria-hidden="true"></i> Phnom Penh</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-solid fa-briefcase" aria-hidden="true"></i> On-site</span>
+                  <span class="inline-flex items-center gap-1.5"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 4 months</span>
                 </div>
 
-                <div class="skill-tags">
-                  <span class="skill-tag">SQL</span>
-                  <span class="skill-tag">Python</span>
-                  <span class="skill-tag">Excel</span>
+                <div class="flex flex-wrap gap-2 mb-4">
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">SQL</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">Python</span>
+                  <span class="inline-flex rounded-full border border-slate-200 bg-slate-100 px-2.5 py-1.5 text-xs text-slate-600">Excel</span>
                 </div>
 
-                <div class="card-footer">
-                  <span class="deadline-text">Deadline: 02 Jul</span>
-                  <div class="card-actions-btns">
-                    <button class="btn btn-secondary" style="padding: 0.75rem 1rem;">View Details</button>
-                    <button class="btn btn-primary" style="padding: 0.75rem 1rem;">Apply</button>
+                <div class="flex items-center justify-between gap-3 mt-4">
+                  <span class="text-xs font-semibold text-orange-600">Deadline: 02 Jul</span>
+                  <div class="flex flex-wrap gap-2.5">
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-3">View Details</button>
+                    <button class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20 px-4 py-3">Apply</button>
                   </div>
                 </div>
               </article>
@@ -233,151 +234,151 @@
           </div>
         </section>
 
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <div class="page-heading">
+        <section class="py-[72px]">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto">
+            <div class="mb-7">
+              <div class="flex items-end justify-between gap-4 mb-7">
                 <div>
-                  <h2>Popular Career Paths</h2>
+                  <h2 class="text-3xl font-bold leading-tight mb-3">Popular Career Paths</h2>
                 </div>
               </div>
             </div>
 
-            <div class="career-grid">
-              <article class="career-card">
-                <div class="career-icon">💻</div>
-                <h3>Web Developer</h3>
-                <p>Build responsive websites and interactive user experiences for modern digital products.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge tertiary">Frontend</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+            <div class="grid grid-cols-3 gap-6 max-[980px]:grid-cols-2 max-[680px]:grid-cols-1">
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-laptop-code" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Web Developer</h3>
+                <p class="text-slate-600">Build responsive websites and interactive user experiences for modern digital products.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-blue-500/10 text-blue-600">Frontend</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
 
-              <article class="career-card">
-                <div class="career-icon">🎨</div>
-                <h3>UI/UX Designer</h3>
-                <p>Design intuitive digital experiences through research, prototyping, and visual design.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge info">Design</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-palette" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">UI/UX Designer</h3>
+                <p class="text-slate-600">Design intuitive digital experiences through research, prototyping, and visual design.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-sky-600/10 text-sky-600">Design</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
 
-              <article class="career-card">
-                <div class="career-icon">📱</div>
-                <h3>Mobile Developer</h3>
-                <p>Create apps for Android and iOS with a strong focus on usability and performance.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge primary">App</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Mobile Developer</h3>
+                <p class="text-slate-600">Create apps for Android and iOS with a strong focus on usability and performance.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-green-600/10 text-green-600">App</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
 
-              <article class="career-card">
-                <div class="career-icon">📊</div>
-                <h3>Data Analyst</h3>
-                <p>Turn raw data into actionable insights that help teams make better decisions.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge secondary">Data</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-chart-column" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Data Analyst</h3>
+                <p class="text-slate-600">Turn raw data into actionable insights that help teams make better decisions.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-teal-700/10 text-teal-700">Data</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
 
-              <article class="career-card">
-                <div class="career-icon">📣</div>
-                <h3>Digital Marketer</h3>
-                <p>Drive online engagement through content, ads, and analytics-driven campaigns.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge warning">Marketing</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-bullhorn" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Digital Marketer</h3>
+                <p class="text-slate-600">Drive online engagement through content, ads, and analytics-driven campaigns.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-orange-500/10 text-orange-600">Marketing</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
 
-              <article class="career-card">
-                <div class="career-icon">✏️</div>
-                <h3>Graphic Designer</h3>
-                <p>Design visual identity, campaigns, and creative assets for brands and businesses.</p>
-                <div class="card-footer" style="margin-top: 20px;">
-                  <span class="badge success">Creative</span>
-                  <a href="career-guide.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">View Career</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-pen" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Graphic Designer</h3>
+                <p class="text-slate-600">Design visual identity, campaigns, and creative assets for brands and businesses.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-5">
+                  <span class="inline-flex items-center justify-center rounded-full px-3 py-1.5 text-xs font-semibold bg-green-700/10 text-green-700">Creative</span>
+                  <a href="career-guide.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">View Career</a>
                 </div>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section">
-          <div class="container">
-            <div class="section-head">
-              <div class="page-heading">
+        <section class="py-[72px]">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto">
+            <div class="mb-7">
+              <div class="flex items-end justify-between gap-4 mb-7">
                 <div>
-                  <h2>Career Resources</h2>
+                  <h2 class="text-3xl font-bold leading-tight mb-3">Career Resources</h2>
                 </div>
               </div>
             </div>
 
-            <div class="resource-grid">
-              <article class="resource-card">
-                <div class="career-icon">📝</div>
-                <h3>CV Preparation</h3>
-                <p>Learn how to write a clear and compelling CV for internship applications.</p>
-                <div class="card-footer" style="margin-top: 18px;">
-                  <a href="resources.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">Read More</a>
+            <div class="grid grid-cols-3 gap-6 max-[980px]:grid-cols-2 max-[680px]:grid-cols-1">
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-note-sticky" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">CV Preparation</h3>
+                <p class="text-slate-600">Learn how to write a clear and compelling CV for internship applications.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-[18px]">
+                  <a href="resources.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">Read More</a>
                 </div>
               </article>
 
-              <article class="resource-card">
-                <div class="career-icon">🎤</div>
-                <h3>Interview Tips</h3>
-                <p>Prepare for common questions and build confidence before your interview day.</p>
-                <div class="card-footer" style="margin-top: 18px;">
-                  <a href="resources.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">Read More</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-microphone" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Interview Tips</h3>
+                <p class="text-slate-600">Prepare for common questions and build confidence before your interview day.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-[18px]">
+                  <a href="resources.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">Read More</a>
                 </div>
               </article>
 
-              <article class="resource-card">
-                <div class="career-icon">🚀</div>
-                <h3>Skill Development</h3>
-                <p>Explore practical learning paths to strengthen your technical and soft skills.</p>
-                <div class="card-footer" style="margin-top: 18px;">
-                  <a href="resources.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">Read More</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-rocket" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Skill Development</h3>
+                <p class="text-slate-600">Explore practical learning paths to strengthen your technical and soft skills.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-[18px]">
+                  <a href="resources.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">Read More</a>
                 </div>
               </article>
 
-              <article class="resource-card">
-                <div class="career-icon">💡</div>
-                <h3>Career Advice</h3>
-                <p>Get practical guidance for choosing the right path and making smart decisions.</p>
-                <div class="card-footer" style="margin-top: 18px;">
-                  <a href="resources.html" class="btn btn-secondary" style="padding: 0.7rem 1rem;">Read More</a>
+              <article class="rounded-[22px] border border-slate-200 bg-white p-5 shadow-lg">
+                <div class="grid place-items-center w-[58px] h-[58px] rounded-[18px] bg-green-600/10 text-xl mb-3.5"><i class="fa-solid fa-lightbulb" aria-hidden="true"></i></div>
+                <h3 class="text-xl font-semibold leading-tight mb-3">Career Advice</h3>
+                <p class="text-slate-600">Get practical guidance for choosing the right path and making smart decisions.</p>
+                <div class="flex items-center justify-between gap-3 mt-4 mt-[18px]">
+                  <a href="resources.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold border border-teal-600/20 bg-white text-teal-700 px-4 py-2.5">Read More</a>
                 </div>
               </article>
             </div>
           </div>
         </section>
 
-        <section class="section">
-          <div class="container">
-            <div class="cta-box">
+        <section class="py-[72px]">
+          <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto">
+            <div class="flex items-center justify-between gap-6 rounded-[28px] bg-gradient-to-br from-green-600 to-teal-700 px-7 py-9 text-white">
               <div>
-                <h2>Ready to Start Your Career Journey?</h2>
-                <p>Take the next step with internship opportunities and skill-building resources designed for students.</p>
+                <h2 class="text-3xl font-bold leading-tight mb-3">Ready to Start Your Career Journey?</h2>
+                <p class="text-slate-600">Take the next step with internship opportunities and skill-building resources designed for students.</p>
               </div>
-              <a href="internships.html" class="btn btn-primary">Explore Internships</a>
+              <a href="internships.html" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20">Explore Internships</a>
             </div>
           </div>
         </section>
       </main>
 
-      <footer class="footer">
-        <div class="container footer-inner">
-          <div class="brand" style="color: white;">
-            <span class="logo-mark">IC</span>
-            <span>Internship & Career Guide</span>
+      <footer class="mt-auto bg-slate-900 text-white/80">
+        <div class="w-[calc(100%-32px)] max-w-[1180px] mx-auto flex min-h-[72px] items-center justify-between gap-5">
+          <div class="inline-flex items-center gap-3 font-bold text-white">
+            <span class="grid place-items-center w-[42px] h-[42px] rounded-[14px] bg-gradient-to-br from-green-600 to-teal-700 text-white font-bold">IC</span>
+            <span>Career Guide · Your Future, Our Guide</span>
           </div>
 
-          <div class="footer-links">
+          <div class="flex items-center gap-5 flex-wrap">
             <a href="index.html">Home</a>
             <a href="internships.html">Internships</a>
             <a href="career-guide.html">Career Guide</a>
@@ -390,3 +391,5 @@
     <script src="script.js"></script>
   </body>
 </html>
+
+

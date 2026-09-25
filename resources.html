@@ -1,48 +1,65 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resources · CareerConnect</title>
+    <title>Resources | Career Guide</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
-<body>
-    <div data-nav></div>
-    <main class="max-w-7xl mx-auto px-5 lg:px-8 py-14"><span class="eyebrow">Learn at your pace</span>
+<body class="bg-slate-50 font-[Poppins] text-slate-900 leading-relaxed">
+    <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
+        <div class="mx-auto flex min-h-[76px] w-[calc(100%-32px)] max-w-[1180px] items-center justify-between gap-6">
+            <a href="index.html" class="inline-flex items-center gap-3 font-bold">
+                <span class="grid h-[42px] w-[42px] place-items-center rounded-full bg-gradient-to-br from-blue-600 to-green-600 text-xl text-white"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+                <span class="leading-tight">Career Guide <small class="block text-[9px] font-medium tracking-wide text-slate-500">YOUR FUTURE · OUR GUIDE</small></span>
+            </a>
+            <nav class="nav-menu hidden flex-1 items-center justify-center gap-2 md:flex" aria-label="Main navigation">
+                <a href="index.html" class="rounded-xl px-4 py-2.5 text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Home</a>
+                <a href="internships.html" class="rounded-xl px-4 py-2.5 text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Internships</a>
+                <a href="career-guide.html" class="rounded-xl px-4 py-2.5 text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">Career Guide</a>
+                <a href="resources.html" class="rounded-xl bg-green-50 px-4 py-2.5 text-sm font-semibold text-green-600">Resources</a>
+                <a href="profile.html" class="rounded-xl px-4 py-2.5 text-sm text-slate-600 hover:bg-green-50 hover:text-green-600">My Profile</a>
+            </nav>
+            <div class="flex items-center gap-3">
+                <button class="grid h-[42px] w-[42px] place-items-center rounded-xl border border-slate-200 bg-white" aria-label="Search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></button>
+                <button class="grid h-[42px] w-[42px] place-items-center rounded-xl border border-slate-200 bg-white" aria-label="Notifications"><i class="fa-solid fa-bell" aria-hidden="true"></i></button>
+                <a href="login.html" class="rounded-xl border border-teal-600/20 bg-white px-5 py-3 font-semibold text-teal-700">Login</a>
+                <button class="mobile-menu-toggle hidden h-[42px] w-[42px] items-center justify-center rounded-xl border border-slate-200 bg-white md:hidden" aria-label="Toggle menu"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-7xl mx-auto px-5 lg:px-8 py-14"><span class="inline-flex rounded-full bg-green-600/10 px-3 py-2 text-xs font-semibold text-green-600">Learn at your pace</span>
         <h1 class="text-4xl font-extrabold mt-3">Resources for the next step.</h1>
         <p class="text-slate-500 mt-2">Useful, focused material for building skills and confidence.</p>
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-            <article class="card overflow-hidden"><img class="h-44 w-full object-cover"
+            <article class="rounded-2xl border border-slate-200 bg-white shadow-lg overflow-hidden"><img class="h-44 w-full object-cover"
                     src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80"
                     alt="Laptop on a desk">
-                <div class="p-6"><span class="pill">Programming</span>
+                <div class="p-6"><span class="inline-flex rounded-full bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-600">Programming</span>
                     <h2 class="font-bold text-lg mt-4">JavaScript Foundations</h2>
                     <p class="text-sm text-slate-500 mt-2 leading-6">A focused path from syntax to your first web app.
                     </p><a href="#" class="text-sm text-blue-600 font-bold inline-block mt-5">Read resource <i
                             class="fa-solid fa-arrow-right ml-1"></i></a>
                 </div>
             </article>
-            <article class="card overflow-hidden"><img class="h-44 w-full object-cover"
+            <article class="rounded-2xl border border-slate-200 bg-white shadow-lg overflow-hidden"><img class="h-44 w-full object-cover"
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=700&q=80"
                     alt="Team collaborating">
-                <div class="p-6"><span class="pill bg-orange-50 text-orange-600">Career Development</span>
+                <div class="p-6"><span class="inline-flex rounded-full bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-600 bg-orange-50 text-orange-600">Career Development</span>
                     <h2 class="font-bold text-lg mt-4">The portfolio playbook</h2>
                     <p class="text-sm text-slate-500 mt-2 leading-6">Show your work with context, clarity, and a little
                         personality.</p><a href="#" class="text-sm text-blue-600 font-bold inline-block mt-5">Read
                         resource <i class="fa-solid fa-arrow-right ml-1"></i></a>
                 </div>
             </article>
-            <article class="card overflow-hidden"><img class="h-44 w-full object-cover"
+            <article class="rounded-2xl border border-slate-200 bg-white shadow-lg overflow-hidden"><img class="h-44 w-full object-cover"
                     src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=80"
                     alt="People in a meeting">
-                <div class="p-6"><span class="pill bg-pink-50 text-pink-600">Interview Preparation</span>
+                <div class="p-6"><span class="inline-flex rounded-full bg-blue-500/10 px-3 py-1.5 text-xs font-semibold text-blue-600 bg-pink-50 text-pink-600">Interview Preparation</span>
                     <h2 class="font-bold text-lg mt-4">Interview stories that work</h2>
                     <p class="text-sm text-slate-500 mt-2 leading-6">Use the STAR method without sounding rehearsed.</p>
                     <a href="#" class="text-sm text-blue-600 font-bold inline-block mt-5">Read resource <i
@@ -51,8 +68,16 @@
             </article>
         </div>
     </main>
-    <div data-footer></div>
-    <script src="js/main.js"></script>
+    <footer class="mt-auto bg-slate-900 text-white/80">
+        <div class="mx-auto flex min-h-[72px] w-[calc(100%-32px)] max-w-[1180px] items-center justify-between gap-5">
+            <span class="font-bold text-white">Career Guide · Your Future, Our Guide</span>
+            <div class="flex flex-wrap items-center gap-5 text-sm">
+                <a href="index.html">Home</a><a href="internships.html">Internships</a><a href="career-guide.html">Career Guide</a>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
+

@@ -1,63 +1,66 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register | Internship & Career Guide</title>
+    <title>Register | Internship & Career Guide</title><script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    
   </head>
-  <body>
-    <div class="auth-page">
-      <div class="auth-box">
-        <div class="brand" style="justify-content: center; margin-bottom: 20px;">
-          <span class="logo-mark">IC</span>
-          <span>Internship & Career Guide</span>
+  <body class="bg-slate-50 font-[Poppins] text-slate-900 leading-relaxed">
+    <div class="grid min-h-screen place-items-center bg-green-600/5 p-7">
+      <div class="w-full max-w-[520px] rounded-[28px] border border-slate-200 bg-white p-8 shadow-lg">
+        <div class="inline-flex items-center gap-3 font-bold justify-center mb-5">
+          <span class="grid h-[42px] w-[42px] place-items-center rounded-full bg-gradient-to-br from-blue-600 to-green-600 text-xl text-white"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i></span>
+          <span class="leading-tight">Career Guide <small class="block text-[9px] font-medium tracking-wide text-slate-500">YOUR FUTURE · OUR GUIDE</small></span>
         </div>
 
-        <h2 class="auth-title" style="text-align: center;">Create your account</h2>
-        <p style="text-align: center; margin-bottom: 24px;">Start exploring internships and careers</p>
+        <h2 class="auth-title text-center">Create your account</h2>
+        <p class="text-center mb-6">Start exploring internships and careers</p>
 
         <form>
-          <div class="form-field">
+          <div class="mb-4">
             <label>Full Name</label>
-            <input class="form-control" type="text" placeholder="Enter your full name" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="text" placeholder="Enter your full name" />
           </div>
 
-          <div class="form-field">
+          <div class="mb-4">
             <label>Email</label>
-            <input class="form-control" type="email" placeholder="you@example.com" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="email" placeholder="you@example.com" />
           </div>
 
-          <div class="form-field">
+          <div class="mb-4">
             <label>Password</label>
-            <input class="form-control" type="password" placeholder="Create a password" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="password" placeholder="Create a password" />
           </div>
 
-          <div class="form-field">
+          <div class="mb-4">
             <label>Confirm Password</label>
-            <input class="form-control" type="password" placeholder="Confirm your password" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="password" placeholder="Confirm your password" />
           </div>
 
-          <div class="form-field">
+          <div class="mb-4">
             <label>University / School</label>
-            <input class="form-control" type="text" placeholder="Your university or school" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="text" placeholder="Your university or school" />
           </div>
 
-          <div class="form-field">
+          <div class="mb-4">
             <label>Major</label>
-            <input class="form-control" type="text" placeholder="Your major" />
+            <input class="w-full rounded-xl border border-slate-200 bg-slate-50 px-4 py-3.5 outline-none focus:ring-4 focus:ring-green-500/10" type="text" placeholder="Your major" />
           </div>
 
-          <button type="submit" class="btn btn-primary" style="width: 100%;">Create Account</button>
+          <button type="submit" class="inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 font-semibold bg-green-600 text-white shadow-lg shadow-green-600/20 w-full">Create Account</button>
         </form>
 
-        <p style="text-align: center; margin-top: 20px; color: var(--muted);">
-          Already have an account? <a href="login.html" style="color: var(--primary); font-weight: 600;">Login</a>
+        <p class="text-center mt-5 text-slate-600">
+          Already have an account? <a href="login.html" class="text-green-600 font-semibold">Login</a>
         </p>
       </div>
     </div>
   </body>
 </html>
+
+
